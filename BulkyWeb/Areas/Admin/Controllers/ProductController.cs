@@ -18,8 +18,8 @@ namespace BulkyWeb.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
-            List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
-            return View(objProductList);
+            //List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
+            return View();
         }
         public IActionResult Upsert(int? id)
         {
