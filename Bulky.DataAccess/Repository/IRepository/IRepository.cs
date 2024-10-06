@@ -17,7 +17,7 @@ namespace Bulky.DataAccess.Repository.IRepository
         //Parameter:Expression<Func<T, bool>> filter: Represents a LINQ expression used to filter records, such as product => product.Id == 5.
         //Return Type: T — Returns a single entity that matches the criteria or null if no match is found.
         //Use Case: Fetch a single record based on a specific condition, such as getting a product by ID or by name.
-        T Get(Expression<Func<T, bool>> filter, string? includeProperties = null);
+        T Get(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = false);
         void Add(T entity);
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entity);
