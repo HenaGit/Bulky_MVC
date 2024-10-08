@@ -14,4 +14,4 @@ namespace Bulky.DataAccess.Repository.IRepository
         void UpdateStripePaymentID(int id, string sessionId, string paymentIntentId);
     }
 }
-}
+

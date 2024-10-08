@@ -47,4 +47,4 @@ namespace Bulky.DataAccess.Repository
         }
     }
 }
-}
+
